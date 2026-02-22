@@ -1,9 +1,4 @@
-# --- YOUR SPECIFIC CONFIGURATION ---
-.env
-/client/node_modules
-/server/node_modules
-
-# --- STANDARD TEMPLATE ---
+# --- Logs ---
 logs
 *.log
 npm-debug.log*
@@ -12,13 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# If you use 'dist' for your build, REMOVE the 'dist' line below
-# If you use 'build', you can keep 'dist' ignored.
-dist
-dist-ssr
+# --- Build ---
+# Uncomment the line below ONLY if you don't want to upload your build files
+# dist
+# dist-ssr
+
+# --- Environment ---
+.env
+.env.*
 *.local
 
-# Editor directories and files
+# --- Editor ---
 .vscode/*
 !.vscode/extensions.json
 .idea
