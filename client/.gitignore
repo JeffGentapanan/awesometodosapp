@@ -1,0 +1,30 @@
+# --- YOUR SPECIFIC CONFIGURATION ---
+.env
+/client/node_modules
+/server/node_modules
+
+# --- STANDARD TEMPLATE ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# If you use 'dist' for your build, REMOVE the 'dist' line below
+# If you use 'build', you can keep 'dist' ignored.
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
