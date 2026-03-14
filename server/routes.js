@@ -33,8 +33,6 @@ router.delete("/todos/:id", async (req, res) => {
 });
 
 // PUT (Update) a todo status
-// PUT /todos/:id
-// PUT (Update) a todo status
 router.put("/todos/:id", async (req, res) => {
     const collection = getCollection();
     const _id = new ObjectId(req.params.id);

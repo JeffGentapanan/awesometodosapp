@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 const router = require("./routes");
 app.use("/api", router);
 
-// 3. FIX: Use a Regex to match all routes EXCEPT those starting with /api
+// 3. Use a Regex to match all routes EXCEPT those starting with /api
 // This prevents the PathError and serves your React app correctly
 app.get(/^(?!\/api).+/, (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist/index.html'));

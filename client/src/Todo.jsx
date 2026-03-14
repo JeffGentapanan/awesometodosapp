@@ -1,5 +1,5 @@
 export default function Todo(props) {
-    // I have added the actual logic for updateTodo here
+    
     const updateTodo = async (todoId, todoStatus) => {
         const res = await fetch(`/api/todos/${todoId}`, {
             method: "PUT",
