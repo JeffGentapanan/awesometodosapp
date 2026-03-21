@@ -1,4 +1,4 @@
-# --- Logs ---
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -7,17 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# --- Build ---
-# Uncomment the line below ONLY if you don't want to upload your build files
-# dist
-# dist-ssr
-
-# --- Environment ---
-.env
-.env.*
+node_modules
+dist
+dist-ssr
 *.local
 
-# --- Editor ---
+# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
