@@ -1,0 +1,12 @@
+{
+  "name": "awesometodos",
+  "version": "1.0.0",
+  "description": "Awesome Todos Fullstack Application",
+  "scripts": {
+    "build": "npm install --prefix client && npm run build --prefix client && npm install --prefix server",
+    "start": "cd server && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
