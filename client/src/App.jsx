@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Todo from "./Todo"; // <--- 1. IMPORT MUST BE HERE
+import Todo from "./Todo";
 
 export default function App() {
   const [todos, setTodos] = useState([]);
@@ -28,8 +28,6 @@ export default function App() {
     }
   };
 
-  // 2. IMPORTANT: Delete the old updateTodo function from here! 
-  // It now lives in Todo.jsx.
 
   return (
     <main className="container">

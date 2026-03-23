@@ -3,7 +3,7 @@ export default function Todo(props) {
     const updateTodo = async (todoId, todoStatus) => {
         const res = await fetch(`/api/todos/${todoId}`, {
             method: "PUT",
-            body: JSON.stringify({ status: !todoStatus }), // Toggle the status
+            body: JSON.stringify({ status: !todoStatus }), 
             headers: {
                 "Content-Type": "application/json",
             },
