@@ -48,7 +48,6 @@ export default function App() {
       <div className="todos">
         {(todos.length > 0) &&
           todos.map((todo) => (
-            // 3. This matches your logic exactly
             <Todo todo={todo} setTodos={setTodos} key={todo._id} />
           ))
         }
